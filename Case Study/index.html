@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cell {border: 1px solid salmon;           
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 12pt;
+        position: absolute;
+        }
+    </style>
+</head>
+<body>  
+    <canvas id="myCanvas" height="800" width="1100" style="background-image: url(./media/TetrisLogoWallpaper.png); border: 1px solid black;">
+        <img src="./media/gameover.png" id="overimg" onclick="tryAgain()">
+        <img src="./media/start.png" alt="" id="startGame">
+        <img src="./media/mute.png" alt="" id="muteMusic">
+        <img src="./media/on.png" alt="" id="onMusic">
+        <audio src="./media/ingame.mp3" id="ingameMusic"></audio>
+        <audio src="./media/gameover.mp3" id="overMusic"></audio>
+    </canvas>
+    <script src="game.js"></script>
+</body>
+</html>
